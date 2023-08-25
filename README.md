@@ -12,3 +12,15 @@ Create new solution
 
 Create a webapi
 `dotnet new webapi -n API`
+
+List solution projects 
+`dotnet sln list`
+
+Add project to solution
+`dotnet sln add API`
+
+Start API project 
+`dotnet run`
+
+Allow https cert
+`dotnet dev-certs https --trust`
