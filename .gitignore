@@ -439,3 +439,6 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+
+
+API/myCoreApp.db

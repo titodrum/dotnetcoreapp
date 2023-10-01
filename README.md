@@ -32,4 +32,7 @@ Update dotnet-ef
 `dotnet tool update --global dotnet-ef --version 7.0.11`
 
 Add migrations
-`dotnet-ef migrations add InitialCreate -o Data/Migrations^`
+`dotnet-ef migrations add InitialCreate -o Data/Migrations`
+
+Creat database
+`dotnet-ef database update`
