@@ -24,3 +24,9 @@ Start API project
 
 Allow https cert
 `dotnet dev-certs https --trust`
+
+Install dotnet-ef
+`dotnet tool install --global dotnet-ef --version 7.0.11`
+
+Update dotnet-ef
+`dotnet tool update --global dotnet-ef --version 7.0.11`
