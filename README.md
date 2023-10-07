@@ -41,6 +41,10 @@ Create Angular project
 (link1)[https://github.com/nvm-sh/nvm/issues/400]
 (link2)[https://docs.npmjs.com/downloading-and-installing-node-js-and-npm]
 (link3)[https://angular.io/guide/setup-local]
+
+Install Angular (version 16.2.5)
+`npm i -g @angular/cli@16.2.5`
+
 Update node version to support angular version
 `nvm install v16.14.0 --reinstall-packages-from=16.13.0`
 
