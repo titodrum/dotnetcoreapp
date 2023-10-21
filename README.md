@@ -53,3 +53,13 @@ Create Angular client
 
 Run client app
 `ng serve`
+
+Adding angular bootstrap from [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/documentation)
+
+Install font-awesome
+`npm install font-awesome`
+
+Install github mkcert as admin using choco in windows [link](https://github.com/FiloSottile/mkcert)
+
+Modify Entity and update migration
+`dotnet-ef migrations add UserPasswordAdded`
