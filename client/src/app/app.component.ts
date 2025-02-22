@@ -1,18 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { RouterOutlet } from '@angular/router';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  imports: [RouterOutlet, NgFor]
 })
 export class AppComponent implements OnInit {
-  title = 'Sup!';
+  title = 'Demo App!';
   users: any;
+  http = inject(HttpClient);
 
-  constructor(private http: HttpClient){
-
-  }
 
   ngOnInit(): void {
     this.http.get('https://localhost:5001/api/users')

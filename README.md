@@ -1,5 +1,6 @@
 # Development History
 
+## Dotnet Project 
 `dotnet --info`
 `dotnet -h`
 `dotnet new -h`
@@ -25,6 +26,8 @@ Start API project
 Allow https cert
 `dotnet dev-certs https --trust`
 
+## Entity Framework 
+
 Install dotnet-ef
 `dotnet tool install --global dotnet-ef --version 7.0.11`
 
@@ -37,7 +40,8 @@ Add migrations
 Creat database
 `dotnet-ef database update`
 
-Create Angular project
+
+## Create Angular project
 (link1)[https://github.com/nvm-sh/nvm/issues/400]
 (link2)[https://docs.npmjs.com/downloading-and-installing-node-js-and-npm]
 (link3)[https://angular.io/guide/setup-local]
@@ -63,3 +67,6 @@ Install github mkcert as admin using choco in windows [link](https://github.com/
 
 Modify Entity and update migration
 `dotnet-ef migrations add UserPasswordAdded`
+
+Apply all migrations
+`dotnet-ef database update -v`
