@@ -11,6 +11,10 @@
 
 `ng g c nav --dry-run`
 
+### Inspect adding a new service called nav
+
+`ng g s _services --dry-run`
+
 ### install new packages
 
 `npm install font-awesome`
