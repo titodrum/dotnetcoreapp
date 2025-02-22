@@ -60,8 +60,11 @@ Run client app
 
 Adding angular bootstrap from [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/documentation)
 
-Install font-awesome
+Install font-awesome for icons
 `npm install font-awesome`
+
+Install bootstrap 
+`npm install ngx-bootstrao bootstrap font-awesome`
 
 Install github mkcert as admin using choco in windows [link](https://github.com/FiloSottile/mkcert)
 
