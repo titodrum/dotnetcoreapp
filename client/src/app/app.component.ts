@@ -1,13 +1,13 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { RouterOutlet } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
 
 @Component({
   selector: 'app-root',
+  standalone:true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [RouterOutlet, NavComponent],
+  imports: [NavComponent],
 })
 export class AppComponent implements OnInit {
   title = 'Demo App!';
