@@ -58,6 +58,12 @@ Create Angular client
 Run client app
 `ng serve`
 
+Add new components
+`ng g c home --skip-tests`
+
+Add new service
+`ng g s account --skip-tests`
+
 Adding angular bootstrap from [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/documentation)
 
 Install font-awesome for icons
