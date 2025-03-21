@@ -11,6 +11,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
 
+
   http = inject(HttpClient);
   registerMode = false;
   users: any;
@@ -30,5 +31,9 @@ export class HomeComponent implements OnInit {
       complete: () => console.log('Request has completed'),
     });
   }
+
+  cancelRegisterMode(event: boolean) {
+    this.registerMode = event  
+    }
 
 }
