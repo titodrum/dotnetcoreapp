@@ -60,9 +60,15 @@ Run client app
 
 Add new components
 `ng g c home --skip-tests`
+`ng g c members/member-list --skip-tests`
+`ng g c members/member-details --skip-tests`
+`ng g c messages --skip-tests`
+`ng g c resgister --skip-tests`
+`ng g c nav --skip-tests`
+`ng g c lists --skip-tests`
 
 Add new service
-`ng g s account --skip-tests`
+`ng g s _services/account --skip-tests`
 
 Adding angular bootstrap from [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/documentation)
 
@@ -71,6 +77,16 @@ Install font-awesome for icons
 
 Install bootstrap 
 `npm install ngx-bootstrao bootstrap font-awesome`
+
+Install toastr
+`npm instal ngx-toastr --save`
+`npm install @angular/animations --save`
+
+List ng g cli commands
+`ng g --help`
+
+Add ng guards
+`ng g g _guards/auth --dry-run`
 
 Install github mkcert as admin using choco in windows [link](https://github.com/FiloSottile/mkcert)
 
