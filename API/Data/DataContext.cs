@@ -10,7 +10,7 @@ IdentityUserClaim<int>, AppUserRole, IdentityUserLogin<int>,
 IdentityRoleClaim<int>, IdentityUserToken<int>>(options)
 {
 
-    public DbSet<AppUser> Users { get; set; }
+    // public DbSet<AppUser> Users { get; set; }
     // public DbSet<UserLike> Likes { get; set; }
     // public DbSet<Messages> Messages{get;set;}
 

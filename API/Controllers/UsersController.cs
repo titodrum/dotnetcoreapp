@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
-// [Authorize]
-public class UsersController(UserRepository userRepository, IMapper mapper) : BaseApiController
+[Authorize]
+public class UsersController(IUserRepository userRepository, IMapper mapper) : BaseApiController
 {
 
     [HttpGet]

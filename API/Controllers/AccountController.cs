@@ -38,21 +38,21 @@ public class AccountController(UserManager<AppUser> userManager, ITokenService t
 
     private async Task<bool> UserExists(string username)
     {
-        return await userManager.Users.AnyAsync(x => x.NormalizedUserName.Equals(username.ToUpper()));
+        return await userManager.Users.AnyAsync(x => x.NormalizedUserName!.Equals(username.ToUpper()));
     }
 
     [HttpPost("login")]
     public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
     {
         var user = await userManager.Users
-        .SingleOrDefaultAsync(x => x.NormalizedUserName.Equals(loginDto.Username.ToUpper()));
+        .SingleOrDefaultAsync(x => x.NormalizedUserName!.Equals(loginDto.Username.ToUpper()));
 
         if (user is null || user.UserName is null) return Unauthorized();
 
         var result = await userManager.CheckPasswordAsync(user, loginDto.Password);
 
         if(!result) return Unauthorized();
-        
+
         return new UserDto
         {
             Username = user.UserName,

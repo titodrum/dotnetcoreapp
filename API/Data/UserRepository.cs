@@ -13,7 +13,7 @@ public class UserRepository(DataContext context) : IUserRepository
 
     public async Task<AppUser?> GetUserByUsernameAsync(string username)
     {
-        return await context.Users.SingleOrDefaultAsync(x => x.UserName.ToLower().Equals(username.ToLower()));
+        return await context.Users.SingleOrDefaultAsync(x => x.UserName!.ToLower().Equals(username.ToLower()));
     }
 
     public async Task<IEnumerable<AppUser>> GetUsersAsync()

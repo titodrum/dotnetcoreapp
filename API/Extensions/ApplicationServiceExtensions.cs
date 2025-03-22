@@ -8,7 +8,7 @@ public static class ApplicationServiceExtensions
 {
     public static IServiceCollection ConfigureApplicationServices(this IServiceCollection services, IConfiguration config)
     {
-        services.AddControllers();
+        
         // Add services to the container.
         services.AddDbContext<DataContext>(opt =>
         {
