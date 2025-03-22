@@ -85,8 +85,11 @@ Install toastr
 List ng g cli commands
 `ng g --help`
 
-Add ng guards
+Add ng guards to grant access to routes
 `ng g g _guards/auth --dry-run`
+
+Add ng interceptors to handle errors
+`ng g interceptor _interceptors/error --dry-run  `
 
 Install github mkcert as admin using choco in windows [link](https://github.com/FiloSottile/mkcert)
 
