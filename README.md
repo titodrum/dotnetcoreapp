@@ -91,6 +91,9 @@ Add ng guards to grant access to routes
 Add ng interceptors to handle errors
 `ng g interceptor _interceptors/error --dry-run  `
 
+Add environment configuration
+`ng g environments`
+
 Install github mkcert as admin using choco in windows [link](https://github.com/FiloSottile/mkcert)
 
 Modify Entity and update migration
